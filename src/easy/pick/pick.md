@@ -11,6 +11,7 @@ Link to Challenge: https://github.com/type-challenges/type-challenges/blob/main/
 			- [Mapped Types](#mapped-types)
 			- [Generic Constraints](#generic-constraints)
 				- [keyof](#keyof)
+		- [Conclusion](#conclusion)
 		- [Reference](#reference)
 
 ### Tags
@@ -111,6 +112,9 @@ Type '"color" | "isComfortable" | "invalid"' does not satisfy the constraint 'ke
 Type '"invalid"' is not assignable to type 'keyof Chair'.
 */
 ```
+`invalid` is not in `Chair`, so the `NewChair` type is invalid
+
+### Conclusion
 
 Congratulations—you now have a typesafe pick function!
 
