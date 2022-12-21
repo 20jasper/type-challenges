@@ -6,6 +6,7 @@
 		- [Tags](#tags)
 		- [Explanation](#explanation)
 			- [keyof](#keyof)
+			- [Lookup types](#lookup-types)
 			- [Mapped Types](#mapped-types)
 			- [Generic Constraints](#generic-constraints)
 		- [Reference](#reference)
@@ -28,7 +29,7 @@ type Chair = {
 
 keyof Chair // "color" | "legCount" | "isComfortable"
 ```
-
+#### Lookup types
 To get the type of these keys (or indexed access types/lookup types), we can use square bracket notation
 
 ```ts
