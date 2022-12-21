@@ -10,7 +10,7 @@ Link to Challenge: https://github.com/type-challenges/type-challenges/blob/main/
 			- [Lookup types](#lookup-types)
 			- [Mapped Types](#mapped-types)
 			- [Generic Constraints](#generic-constraints)
-			- [keyof](#keyof)
+				- [keyof](#keyof)
 		- [Reference](#reference)
 
 ### Tags
@@ -25,7 +25,7 @@ type MyPick<Type, Union> = /* ... */
 ```
 
 #### Lookup types
-To get the type of the keys (also known as indexed access types or lookup types) in `Chair`, we can use square bracket notation just like accessing a property or method in a JavaScript object
+To get the type of the keys (keys are also known as indexed access types or lookup types) in `Chair`, we can use square bracket notation just like accessing a property or method in a JavaScript object
 
 ```ts
 type Chair = {
