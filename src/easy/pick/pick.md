@@ -63,6 +63,7 @@ type BooleanChair = {
 }
 */
 ```
+Note that `Key` in this example is a parameter, so it is just a placeholder name. It could be called `Property` or `Jimothy` and work just as well
 
 ---
 #### Generic Constraints
