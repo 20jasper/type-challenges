@@ -3,14 +3,20 @@
 ## Table Of Contents
 - [Pick](#pick)
 	- [Table Of Contents](#table-of-contents)
-	- [keyof](#keyof)
-	- [Mapped Types](#mapped-types)
-	- [Generic Constraints](#generic-constraints)
-	- [Tags](#tags)
+		- [Tags](#tags)
+		- [Explanation](#explanation)
+			- [keyof](#keyof)
+			- [Mapped Types](#mapped-types)
+			- [Generic Constraints](#generic-constraints)
 		- [Reference](#reference)
 
-
-## keyof
+### Tags
+- Indexed Access Types/Lookup types
+- Mapped types
+- Generic constraints
+  
+### Explanation
+#### keyof
 The `keyof` operator takes an object type and returns a string, string union, or number union of the type's keys.
 
 ```ts
@@ -36,7 +42,7 @@ Chair[key] // Type "key" cannot be used as an index type
 ```
 
 ---
-## Mapped Types
+#### Mapped Types
 Now that we have a union of the keys of the type, how can we make a new object type out of it? The answer is mapped types
 
 For example, we can set each key of `Chair` to a boolean like this with dynamic keys and the `in` operator
@@ -58,7 +64,7 @@ type BooleanChair = {
 ```
 
 ---
-## Generic Constraints
+#### Generic Constraints
 But why can't we just combine mapped types and lookup types to set each property in the union to the appropriate lookup type like this?
 
 ```ts
@@ -91,14 +97,6 @@ Type '"color" | "isComfortable" | "invalid"' does not satisfy the constraint 'ke
 Type '"invalid"' is not assignable to type 'keyof Chair'.
 */
 ```
-
-
-
-
-## Tags
-- Indexed Access Types/Lookup types
-- Mapped types
-- Generic constraints
 
 ### Reference
 - Lookup Types/Indexed Access Types
