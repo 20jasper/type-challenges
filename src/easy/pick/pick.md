@@ -25,7 +25,7 @@ type MyPick<Type, Union> = /* ... */
 ```
 
 #### Lookup types
-To get the type of the keys in `Chair` (also known as indexed access types or lookup types), we can use square bracket notation just like accessing a property or method in a JavaScript object
+To get the type of the keys (also known as indexed access types or lookup types) in `Chair`, we can use square bracket notation just like accessing a property or method in a JavaScript object
 
 ```ts
 type Chair = {
