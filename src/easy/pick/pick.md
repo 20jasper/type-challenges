@@ -53,7 +53,7 @@ For example, we can set each key of `Chair` to a boolean like this with dynamic 
 type ChairKeysUnion = "color" | "legCount" | "isComfortable"
 
 type BooleanChair = {
-	[Property in ChairKeysUnion]: boolean
+	[Key in ChairKeysUnion]: boolean
 } 
 /*
 type BooleanChair = {
