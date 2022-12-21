@@ -1,12 +1,14 @@
 # Pick
+This type challenge is to create your own version of pick (without pick obviously). I decided not to use any utility types
 
+Link to Challenge: https://github.com/type-challenges/type-challenges/blob/main/questions/00004-easy-pick/README.md
 ## Table Of Contents
 - [Pick](#pick)
 	- [Table Of Contents](#table-of-contents)
 		- [Tags](#tags)
 		- [Explanation](#explanation)
-			- [keyof](#keyof)
 			- [Lookup types](#lookup-types)
+			- [keyof](#keyof)
 			- [Mapped Types](#mapped-types)
 			- [Generic Constraints](#generic-constraints)
 		- [Reference](#reference)
@@ -17,6 +19,31 @@
 - Generic constraints
   
 ### Explanation
+We need to create a new object type with only the properties in both `Type` and `Union` 
+```ts
+type MyPick<Type, Union> = /* ... */
+```
+
+#### Lookup types
+To get the type of the keys in `Chair` (also known as indexed access types or lookup types), we can use square bracket notation just like accessing a property or method in a JavaScript object
+
+```ts
+type Chair = {
+	color: string,
+	legCount: number,
+	isComfortable: boolean
+}
+
+Chair["color"] // string
+Chair["legCount"] // number
+```
+Note that only types can be used for indexing
+```ts
+const key = "color"
+Chair[key] // Type "key" cannot be used as an index type
+```
+
+---
 #### keyof
 The `keyof` operator takes an object type and returns a string, string union, or number union of the type's keys.
 
@@ -28,18 +55,6 @@ type Chair = {
 }
 
 keyof Chair // "color" | "legCount" | "isComfortable"
-```
-#### Lookup types
-To get the type of these keys (or indexed access types/lookup types), we can use square bracket notation
-
-```ts
-Chair["color"] // string
-Chair["legCount"] // number
-```
-Note that only types can be used for indexing
-```ts
-const key = "color"
-Chair[key] // Type "key" cannot be used as an index type
 ```
 
 ---
