@@ -96,7 +96,9 @@ Type '"invalid"' is not assignable to type 'keyof Chair'.
 
 
 ## Tags
-This solution uses Indexed Access Types/Lookup types and Mapped types
+- Indexed Access Types/Lookup types
+- Mapped types
+- Generic constraints
 
 ### Reference
 - Lookup Types/Indexed Access Types
