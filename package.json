@@ -1,0 +1,23 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "description": "These are type challenges completed from this repo: https://github.com/type-challenges/type-challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/20jasper/type-challenges.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/20jasper/type-challenges/issues"
+  },
+  "homepage": "https://github.com/20jasper/type-challenges#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
