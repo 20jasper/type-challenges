@@ -8,9 +8,9 @@ Link to Challenge: https://github.com/type-challenges/type-challenges/blob/main/
 		- [Tags](#tags)
 		- [Explanation](#explanation)
 			- [Lookup types](#lookup-types)
-			- [keyof](#keyof)
 			- [Mapped Types](#mapped-types)
 			- [Generic Constraints](#generic-constraints)
+			- [keyof](#keyof)
 		- [Reference](#reference)
 
 ### Tags
@@ -44,28 +44,13 @@ Chair[key] // Type "key" cannot be used as an index type
 ```
 
 ---
-#### keyof
-The `keyof` operator takes an object type and returns a string, string union, or number union of the type's keys.
-
-```ts
-type Chair = {
-	color: string,
-	legCount: number,
-	isComfortable: boolean
-}
-
-keyof Chair // "color" | "legCount" | "isComfortable"
-```
-
----
 #### Mapped Types
-Now that we have a union of the keys of the type, how can we make a new object type out of it? The answer is mapped types
+How can we iterate through the union and create a new object type? The answer is mapped types
 
 For example, we can set each key of `Chair` to a boolean like this with dynamic keys and the `in` operator
 
 ```ts
-type ChairKeysUnion = keyof Chair 
-// "color" | "legCount" | "isComfortable"
+type ChairKeysUnion = "color" | "legCount" | "isComfortable"
 
 type BooleanChair = {
 	[Property in ChairKeysUnion]: boolean
@@ -88,9 +73,7 @@ type MyPick<Type, Union> = {
 	[Key in Union]: Type[Key]
 }
 ```
-
-
-In the case a property doesn't exist in the `Type` passed to `MyPick`, it will be on the new object type with a value of `unknown`
+At this point, `MyPick` is not typesafe—it accepts any and all properties in `Union`. In the case a property doesn't exist in the `Type` passed to `MyPick`, it will be on the new object type with a value of `unknown`
 
 ```ts
 type NewChair = MyPick<Chair, 'color' | 'isComfortable' | 'invalid'>
@@ -101,7 +84,21 @@ type NewChair = {
     invalid: unknown;
 }*/
 ```
-At this point, `MyPick` accepts any and all properties in `Union`, so we can use the `extends` keyword to only allow unions with properties contained in `Type`
+---
+
+##### keyof
+To limit `Union` to only lookup types in `Type`, we first need `Type`'s lookup types. To do this, we can use the `keyof` operator. It takes an object type and returns a string, string union, or number union of the type's keys.
+
+```ts
+type Chair = {
+	color: string,
+	legCount: number,
+	isComfortable: boolean
+}
+
+type ChairIndexUnion = keyof Chair // "color" | "legCount" | "isComfortable"
+```
+Now that we have both unions, we can constrain the `Union` parameter to lookup types in `Type` with the `extends` keyword 
 ```ts
 type MyPick<Type, Union extends keyof Type> = {
 	[Key in Union]: Type[Key]
@@ -113,6 +110,10 @@ Type '"color" | "isComfortable" | "invalid"' does not satisfy the constraint 'ke
 Type '"invalid"' is not assignable to type 'keyof Chair'.
 */
 ```
+
+Congratulations—you now have a typesafe pick function!
+
+---
 
 ### Reference
 - Lookup Types/Indexed Access Types
