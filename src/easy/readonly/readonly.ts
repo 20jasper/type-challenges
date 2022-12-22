@@ -1,7 +1,9 @@
 import type { Equal, Expect } from '../../../utils'
 
 // solution
-type MyReadonly<T> = any
+type MyReadonly<Type> = {
+	readonly [Key in keyof Type]: Type[Key]
+}
 
 // test cases
 type cases = [
