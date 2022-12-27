@@ -10,6 +10,19 @@ type DeepReadonly<Type> = {
 	DeepReadonly<Type[Key]>
 }
 
+// Explanation
+/*
+Everything except primitives and functions need to be made readonly, so we can use a conditional type to set each non-function key to readonly. We don't need to worry about primitives, since mapped types will just return them, breaking recursion.
+
+Conditional types are always distributive (meaning they spread through unions) when they are used on a generic, so this covers the second case as well 
+
+Tags: mapped types, conditional types
+References:
+https://www.typescriptlang.org/docs/handbook/2/conditional-types.html
+https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#distributive-conditional-types
+https://www.typescriptlang.org/docs/handbook/2/mapped-types.html
+*/
+
 // test cases
 type cases = [
 	Expect<Equal<DeepReadonly<X1>, Expected1>>,
