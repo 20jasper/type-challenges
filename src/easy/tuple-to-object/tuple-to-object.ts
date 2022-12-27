@@ -6,6 +6,14 @@ type TupleToObject<Type extends readonly PropertyKey[]> = {
 	[Key in Type[number]]: Key
 }
 
+//explanation
+/*
+Passing the number type to a tuple returns a union of that tuple's elements
+
+The array elements must only be strings, numbers or symbols because they must be a property key. Something like an array can't be a key in a javascript object
+
+*/
+
 //test cases
 const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
 const tupleNumber = [1, 2, 3, 4] as const
