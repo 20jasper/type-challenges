@@ -2,7 +2,9 @@ import type { Equal, Expect } from '../../../utils'
 
 
 //solution
-type TupleToObject<T extends readonly any[]> = any
+type TupleToObject<Type extends readonly PropertyKey[]> = {
+	[Key in Type[number]]: Key
+}
 
 //test cases
 const tuple = ['tesla', 'model 3', 'model X', 'model Y'] as const
