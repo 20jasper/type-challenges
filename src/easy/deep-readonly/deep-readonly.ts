@@ -2,7 +2,13 @@ import type { Equal, Expect } from '../../../utils'
 
 
 // solution
-type DeepReadonly<T> = any
+type DeepReadonly<Type> = {
+	readonly [Key in keyof Type]: Type[Key] extends Function ?
+	// if value is a function, do not make it readonly
+	Type[Key] :
+	// else go deeper within an object, or end at a primitive value
+	DeepReadonly<Type[Key]>
+}
 
 // test cases
 type cases = [
