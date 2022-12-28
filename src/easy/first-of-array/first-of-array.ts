@@ -9,7 +9,7 @@ type First<Type extends any[]> = Type extends [] ?
 
 //explanation
 /*
-The Type parameter is already constrained to the arrays of any type, so we don't need to worry about the error cases as long as we don't change the parameters
+The Type parameter is already constrained to arrays of any type, so we don't need to worry about the error cases as long as we don't change the parameters
 
 If we just return Type[0], we will pass every case except those where the array empty, so we can just use a conditional type to return the first element if it exists, else return never
 
