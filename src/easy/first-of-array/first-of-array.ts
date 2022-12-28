@@ -1,7 +1,11 @@
 import type { Equal, Expect } from '../../../utils'
 
 //solution
-type First<Type extends any[]> =
+type First<Type extends any[]> = Type extends [] ?
+	// if Type is empty array, return never
+	never :
+	// else return the first element
+	Type[0]
 
 //testcases
 type cases = [
