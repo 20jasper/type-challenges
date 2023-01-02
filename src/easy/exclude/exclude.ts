@@ -1,7 +1,7 @@
 import type { Equal, Expect } from '../../../utils'
 
 // solution
-type MyExclude<T, U> = any
+type MyExclude<Type, Union> = Type extends Union ? never : Type
 
 // testcases
 type cases = [
