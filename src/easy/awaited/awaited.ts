@@ -1,10 +1,14 @@
 import type { Equal, Expect } from '../../../utils'
 
 // solution
-type MyAwaited<Type> =
+type MyAwaited<Type extends PromiseLike<any>> = Type extends PromiseLike<infer ReturnType> ?
+	(ReturnType extends Promise<any> ?
+		MyAwaited<ReturnType> :
+		ReturnType)
+	: Type
 
-	//testcases
-	type X = Promise<string>
+//testcases
+type X = Promise<string>
 type Y = Promise<{ field: number }>
 type Z = Promise<Promise<string | number>>
 type Z1 = Promise<Promise<Promise<string | boolean>>>
