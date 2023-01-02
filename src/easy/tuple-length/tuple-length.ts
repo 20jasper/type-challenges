@@ -1,5 +1,9 @@
 import type { Equal, Expect } from '../../../utils'
 
+// solution
+type Length<Type extends readonly any[]> = Type["length"]
+
+// test cases
 const tesla = ['tesla', 'model 3', 'model X', 'model Y'] as const
 const spaceX = ['FALCON 9', 'FALCON HEAVY', 'DRAGON', 'STARSHIP', 'HUMAN SPACEFLIGHT'] as const
 
