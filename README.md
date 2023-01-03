@@ -10,6 +10,8 @@ Type challenge roadmap and solutions with explanations from this repo: https://g
 		- [Mapped Types](#mapped-types)
 	- [Reference](#reference)
 		- [Conditional Types](#conditional-types-1)
+		- [Generic Constraints](#generic-constraints)
+		- [Unions](#unions)
 		- [Lookup Types](#lookup-types-1)
 		- [Type Inference](#type-inference)
 		- [Mapped Types](#mapped-types-1)
@@ -112,7 +114,17 @@ Use this challenge to warm up and make sure the testing types are working, then 
 
 ### Conditional Types
 - [Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
+
+### Generic Constraints
+- [Generic Constraints](https://www.typescriptlang.org/docs/handbook/2/generics.html#generic-constraints)
+- [Using Type Parameters in Generic Constraints](https://www.typescriptlang.org/docs/handbook/2/generics.html#using-type-parameters-in-generic-constraints)
+
+### Unions
+- [keyof](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html)
+
 ### Lookup Types
+- [Lookup types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html#keyof-and-lookup-types)
+- [Indexed Access Types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html)
 
 ### Type Inference
 - [Inferring within conditional types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
