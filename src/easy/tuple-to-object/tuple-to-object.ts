@@ -12,6 +12,7 @@ Passing the number type to a tuple returns a union of that tuple's elements
 
 The array elements must only be strings, numbers or symbols because they must be a property key. Something like an array can't be a key in a javascript object
 
+Reference: https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html
 */
 
 //test cases
