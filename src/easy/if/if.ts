@@ -1,7 +1,9 @@
 import type { Equal, Expect } from '../../../utils'
 
 //solution
-type If<C, T, F> = any
+type If<Condition extends boolean, True, False> = Condition extends true ?
+	True :
+	False
 
 //test cases
 type cases = [
