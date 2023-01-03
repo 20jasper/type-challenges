@@ -92,4 +92,4 @@ Use this challenge to warm up and make sure the testing types are working, then 
 ### Lookup Types
 
 ### Type Inference
-- [Inferring within conditinonal types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
+- [Inferring within conditional types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
