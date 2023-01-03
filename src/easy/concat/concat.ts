@@ -6,6 +6,8 @@ type Concat<Arr1 extends any[], Arr2 extends any[]> = [...Arr1, ...Arr2]
 /*
 We can use spread syntax to expand each array passed to `Concat`, also known as "rest elements." The parameters must be contrained to arrays to do this however.
 
+Concat is a "variadic tuple type" because its length is variable
+
 References:
 Rest elements
 https://www.typescriptlang.org/docs/handbook/2/objects.html#the-readonlyarray-type
