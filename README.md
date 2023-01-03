@@ -131,7 +131,10 @@ Use this challenge to warm up and make sure the testing types are working, then 
 - [Using Type Parameters in Generic Constraints](https://www.typescriptlang.org/docs/handbook/2/generics.html#using-type-parameters-in-generic-constraints)
 
 ### Unions
+Unions types are very useful. `keyof` can be used to get a union of an object type's keys, and passing the `number` type to a an array type will return a union of its elements.
+
 - [keyof](https://www.typescriptlang.org/docs/handbook/2/keyof-types.html)
+- [Indexed Access Types](https://www.typescriptlang.org/docs/handbook/2/indexed-access-types.html)
 
 ### Lookup Types
 - [Lookup types](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-2-1.html#keyof-and-lookup-types)
