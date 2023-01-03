@@ -7,6 +7,7 @@ Type challenge roadmap and solutions with explanations from this repo: https://g
 	- [Categories](#categories)
 		- [Conditional Types](#conditional-types)
 		- [Lookup Types](#lookup-types)
+		- [Mapped Types](#mapped-types)
 	- [Reference](#reference)
 		- [Conditional Types](#conditional-types-1)
 		- [Lookup Types](#lookup-types-1)
@@ -82,6 +83,27 @@ Use this challenge to warm up and make sure the testing types are working, then 
             <td>Easy</td>
             <td>Lookup Types, Conditional Types</td>
         </tr>
+    </tbody>
+</table>
+
+
+### Mapped Types
+<table>
+    <thead>
+        <tr>
+            <th>Challenge</th>
+            <th>My solution</th>
+            <th>Difficulty</th>
+            <th>Tags</th>
+        </tr>
+    </thead>
+    <tbody>
+				<tr>
+            <td><a href="./questions/00007-easy-readonly/README.md" target="_blank"><img src="https://img.shields.io/badge/-7%E3%83%BBReadonly-7aad0c" alt="7・Readonly"/></a></td>
+            <td></td>
+            <td>Easy</td>
+            <td>Mapped Types, Lookup Types</td>
+        </tr>	
     </tbody>
 </table>
 
