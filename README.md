@@ -109,6 +109,12 @@ Use this challenge to warm up and make sure the testing types are working, then 
             <td>Mapped Types, Lookup Types</td>
         </tr>	
 				<tr>
+            <td><a href="./questions/00004-easy-pick/README.md" target="_blank"><img src="https://img.shields.io/badge/-4%E3%83%BBPick-7aad0c" alt="4・Pick"/></a></td>
+            <td></td>
+            <td>Easy</td>
+            <td>Mapped Types, Lookup Types, Generic Constraints</td>
+        </tr>	
+				<tr>
             <td><a href="./questions/00011-easy-tuple-to-object/README.md" target="_blank"><img src="https://img.shields.io/badge/-11%E3%83%BBTuple%20to%20Object-7aad0c" alt="11・Tuple to Object"/></a></td>
             <td></td>
             <td>Easy</td>
