@@ -12,6 +12,7 @@ Type challenge roadmap and solutions with explanations from this repo: https://g
 		- [Conditional Types](#conditional-types-1)
 		- [Lookup Types](#lookup-types-1)
 		- [Type Inference](#type-inference)
+		- [Mapped Types](#mapped-types-1)
 
 
 I struggled through doing the challenges in order so you don't have to! Lots of these challenges build on one another, and reference materials can be hard to find, so I decided to compile it all here.
@@ -115,3 +116,6 @@ Use this challenge to warm up and make sure the testing types are working, then 
 
 ### Type Inference
 - [Inferring within conditional types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
+
+### Mapped Types
+- [Mapped Types](https://www.typescriptlang.org/docs/handbook/2/mapped-types.html)
