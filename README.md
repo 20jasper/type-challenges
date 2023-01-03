@@ -9,6 +9,7 @@ Type challenge roadmap and solutions with explanations from this repo: https://g
 		- [Lookup Types](#lookup-types)
 		- [Mapped Types](#mapped-types)
 	- [Reference](#reference)
+		- [General](#general)
 		- [Conditional Types](#conditional-types-1)
 		- [Generic Constraints](#generic-constraints)
 		- [Unions](#unions)
@@ -111,6 +112,10 @@ Use this challenge to warm up and make sure the testing types are working, then 
 </table>
 
 ## Reference
+
+### General
+- [Debugging utility type](https://github.com/typescript-community/resources/blob/master/TYPES.md)
+- [Global Interface Reference](https://microsoft.github.io/PowerBI-JavaScript/modules/_node_modules_typedoc_node_modules_typescript_lib_lib_es5_d_.html)
 
 ### Conditional Types
 - [Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
