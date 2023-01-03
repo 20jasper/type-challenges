@@ -10,6 +10,7 @@ Type challenge roadmap and solutions with explanations from this repo: https://g
 	- [Reference](#reference)
 		- [Conditional Types](#conditional-types-1)
 		- [Lookup Types](#lookup-types-1)
+		- [Type Inference](#type-inference)
 
 
 I struggled through doing the challenges in order so you don't have to! Lots of these challenges build on one another, and reference materials can be hard to find, so I decided to compile it all here.
@@ -89,4 +90,6 @@ Use this challenge to warm up and make sure the testing types are working, then 
 ### Conditional Types
 - [Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
 ### Lookup Types
+
+### Type Inference
 - [Inferring within conditinonal types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
