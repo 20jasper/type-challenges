@@ -36,6 +36,12 @@ Use this challenge to warm up and make sure the testing types are working, then 
         </tr>
     </thead>
     <tbody>
+				<tr>
+            <td><a href="./questions/00043-easy-exclude/README.md" target="_blank"><img src="https://img.shields.io/badge/-43%E3%83%BBExclude-7aad0c" alt="43・Exclude"/></a></td>
+            <td></td>
+            <td>Easy</td>
+            <td>Conditional Types</td>
+        </tr>
         <tr>
             <td><a href="./questions/00013-warm-hello-world/README.md" target="_blank"><a href="./questions/00268-easy-if/README.md" target="_blank"><img src="https://img.shields.io/badge/-268%E3%83%BBIf-7aad0c" alt="268・If"/></a></td>
             <td></td>
