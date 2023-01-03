@@ -42,6 +42,12 @@ Use this challenge to warm up and make sure the testing types are working, then 
             <td>Easy</td>
             <td>Conditional Types, Generic Restraints</td>
         </tr>
+				<tr>
+            <td><a href="./questions/00189-easy-awaited/README.md" target="_blank"><img src="https://img.shields.io/badge/-189%E3%83%BBAwaited-7aad0c" alt="189・Awaited"/></a></td>
+            <td></td>
+            <td>Easy</td>
+            <td>Conditional Types, Generic Restraints, Type Inference</td>
+        </tr>
     </tbody>
 </table>
 
@@ -75,5 +81,6 @@ Use this challenge to warm up and make sure the testing types are working, then 
 ## Reference
 
 ### Conditional Types
-
+- [Conditional Types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html)
 ### Lookup Types
+- [Inferring within conditinonal types](https://www.typescriptlang.org/docs/handbook/2/conditional-types.html#inferring-within-conditional-types)
