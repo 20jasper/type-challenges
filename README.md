@@ -57,11 +57,17 @@ Use this challenge to warm up and make sure the testing types are working, then 
         </tr>
     </thead>
     <tbody>
-        <tr>
+				<tr>
             <td><a href="./questions/00018-easy-tuple-length/README.md" target="_blank"><img src="https://img.shields.io/badge/-18%E3%83%BBLength%20of%20Tuple-7aad0c" alt="18・Length of Tuple"/></a></td>
             <td></td>
             <td>Easy</td>
             <td>Lookup Types, Generic Restraints</td>
+        </tr>	
+        <tr>
+            <td><a href="./questions/00014-easy-first/README.md" target="_blank"><img src="https://img.shields.io/badge/-14%E3%83%BBFirst%20of%20Array-7aad0c" alt="14・First of Array"/></a></td>
+            <td></td>
+            <td>Easy</td>
+            <td>Lookup Types, Conditional Types</td>
         </tr>
     </tbody>
 </table>
